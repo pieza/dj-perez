@@ -1,0 +1,26 @@
+{
+  "name": "dj-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "docker": "docker build . -t dj && docker run -d dj"
+  },
+  "author": "Jose Ulloa",
+  "license": "ISC",
+  "dependencies": {
+    "@discordjs/opus": "^0.4.0",
+    "discord.js": "^12.5.1",
+    "dotenv": "^8.2.0",
+    "ffmpeg": "^0.0.4",
+    "fluent-ffmpeg": "^2.1.2",
+    "sequelize": "^6.5.0",
+    "sqlite3": "^5.0.1",
+    "ytdl-core": "^4.4.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
