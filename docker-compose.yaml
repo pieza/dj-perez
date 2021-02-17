@@ -1,0 +1,8 @@
+services:
+  bot:
+    build: .
+    volumes: 
+      - db-file:/home/dj-perez/db
+
+volumes: 
+  db-file: {}

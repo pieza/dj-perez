@@ -79,6 +79,8 @@ client.on('message', async message => {
 })
 
 client.on('voiceStateUpdate', async (oldMember, newMember) => {
+  if(newMember.member.bot) return
+  
   const setting = await Setting.findOne({
     where: {
       server_id: newMember.guild.id,
